@@ -18,6 +18,6 @@ function odMailToLinkService ($state, $window) {
 
   function executeAction (nodeId, controller) {
     var url = $state.href('document', {doc: nodeId}, {absolute: true})
-    $window.open('mailto:?body=' + url)
+    $window.open('mailto:?body=%0D%0AHer er et link til dokumentet:%0D%0A' + url + '%0D%0A%0D%0A')
   }
 }
